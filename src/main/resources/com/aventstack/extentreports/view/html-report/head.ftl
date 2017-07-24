@@ -8,13 +8,13 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='${timeStampFormat}'/>
 	
-	<link href='${ config.getValue('protocol') }://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-	<link href="${ config.getValue('protocol') }://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='http://qm.corp.rs.com/teamapireport/css.css' rel='stylesheet' type='text/css'>
+	<link href="http://qm.corp.rs.com/teamapireport/icon.css" rel="stylesheet">
 
 	<#if cdn == 'extentreports'>
-		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+		<link href='http://qm.corp.rs.com/teamapireport/extent.css' type='text/css' rel='stylesheet' />
 	<#else>
-		<link href='${ config.getValue('protocol') }://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
+		<link href='http://qm.corp.rs.com/teamapireport/extent2.css' type='text/css' rel='stylesheet' />
 	</#if>
 	
 	<title>${ config.getValue('documentTitle') }</title>
