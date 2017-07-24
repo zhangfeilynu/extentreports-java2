@@ -4,7 +4,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>3.0.6</version>
+    <version>3.0.6.1</version>
     <packaging>jar</packaging>
 
     <name>ExtentAPI Community Version</name>
@@ -190,13 +190,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </profiles>
     
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
+	      <id>Releases</id>
+	      <name>qa-release</name>
+	      <url>http://nexus.corp.rs.com/nexus/content/repositories/releases/</url>
+	    </repository>
     </distributionManagement>
 </project>
