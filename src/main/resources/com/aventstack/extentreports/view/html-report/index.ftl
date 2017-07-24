@@ -94,9 +94,9 @@
 		
 		<#assign cdn = config.getValue('cdn')>
 		<#if cdn == 'extentreports'>
-			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+			<script src='http://qm.corp.rs.com/teamapireport/extent.js' type='text/javascript'></script>
 		<#else>
-			<script src='${ config.getValue('protocol') }://cdn.rawgit.com/anshooarora/extentreports-java/5ed7b0c339b51aa347b44ccaa2e2ff29905b2f9f/dist/js/extent.js' type='text/javascript'></script>
+			<script src='http://qm.corp.rs.com/teamapireport/https_extent.js' type='text/javascript'></script>
 		</#if>
 		
 		<#assign hideChart=(chartVisibleOnOpen=='true')?then(false, true)>
